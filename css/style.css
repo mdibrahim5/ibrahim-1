@@ -1,0 +1,584 @@
+/*-----------------------------------------------------------------------------------
+
+	Template Name: Food
+	Template URI: http://www.humaira.com
+	Description: photo related template
+	Author: Humaira Jahan Mimha
+	Author URI: http://www.humaira.com
+	License: GNU General Public License version 3.0
+	License URI: http://www.gnu.org/licenses/gpl-3.0.html
+	Version: 1.0
+
+-----------------------------------------------------------------------------------
+
+	1. Typography
+	2. Header Area
+		2.1 Nav-area
+		2.2  bannar-area
+		
+	3. Getting-area
+        3.1 row
+        3.2 text-area
+	4. Design Area
+        4.1 design
+        4.2 design-text
+        4.3 slide
+        4.4 arrow 
+	5. Community Area
+        5.1 community
+        5.2 col-1
+        5.3 logo-green
+	6. Subscribe Area
+	7. Download Area
+        7.1 download-area
+        7.2 .download-form  
+	8. Footer Area
+/************** 1. Typography ************************/
+body {
+    margin: 0;
+    padding: 0;
+}
+.container {
+	width: 90%;
+	margin: 0 auto; 
+	max-width: 1020px;
+}
+.head-area {
+    background-color: #205F00;
+    text-align: center;
+    padding: 20px 0;
+}
+input[type=text] {
+  width: 130px;
+  border-radius: 4px;
+  font-size: 16px;
+  background-image: url(file:///D:/Hiking/images/seach-icon.png);
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
+  transition:0.4s ease-in-out;
+  color: #FFFFFF;
+  background-color: #205F00;
+}
+
+input[type=text]:focus {
+  width: 50%;
+}
+.chart {
+    color: #FFFFFF;
+    text-transform: capitalize;
+}
+.chart span {
+    margin: 15px 10px;
+}
+.logo p{
+    color: #FFFFFF;
+}
+.menu-area {
+    padding: 5px 0;
+    text-align: center;
+    background: #FFFFFF;
+}
+.navbar-nav {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+.navbar-nav li {
+    margin: 10px 15px; 
+}
+.navbar-nav li a {
+    text-transform: uppercase;
+    color: #205F00;
+    font-weight: 600;
+    font-size: 20px;
+}
+.navbar-nav li a:hover {
+    color: #448C00;
+    border-bottom: 1px solid #205F00;
+    
+}
+.header-profile {
+    overflow: hidden;
+    background: url(file:///D:/Hiking/images/header-bg.jpg) no-repeat 0 0 / 100% 100%;
+    padding: 20px 0;
+    min-height: 600px;
+    
+}
+
+.header-text {
+    padding: 120px 0;
+}
+.header-text h1 {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #205F00;
+    letter-spacing: inherit;
+    font-size: 42px;
+    margin-top: 0;
+    margin-bottom: 0
+}
+.header-text h2 {
+    text-transform: uppercase;
+    color: #205F00;
+    font-weight: 600;
+    letter-spacing: inherit;
+    margin-top: 0;
+    margin-bottom: 0
+}
+.header-text hr {
+    background: #205F00; 
+    width: 300px;
+    height: 2px;
+}
+.header-text p {
+    color: #205F00;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 400;
+}
+.header-text a {
+    border: none;
+    border-radius: 35px 1px;
+    padding: 15px 40px;
+    background: #205F00;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-decoration: none;
+}
+.header-text a:hover {
+    color: #205F00;
+    background: #8B0713;
+    text-decoration: none;
+}
+.header-text span {
+    border: none;
+    border-radius: 15px 1px;
+    padding: 17px 20px;
+    background: #205F00;
+    color: #FFFFFF;
+    font-size: 18px;
+    margin-left: 5px;
+}
+.about-area {
+    overflow: hidden;
+    padding: 60px 0;
+}
+.about-text {
+    text-align: center;
+}
+.about-text h2 {
+  font-size: 45px;
+  position: relative;
+  color: #205F00;
+  font-weight: 600; 
+}
+.about-text span {
+  position: absolute;
+  font-size: 60px;
+  top: -10px;
+  transform: translateX(-90%);
+  font-weight: 700;
+  opacity: .2;
+  
+}
+.about-text p {
+    text-transform: capitalize;
+    color: #205F00;
+    font-size: 18px;
+}
+.about-image {
+    padding: 40px 0;
+}
+.about-readtext {
+    padding: 80px 0;
+}
+.about-readtext h2 {
+    text-transform: capitalize;
+    font-weight: 600;
+    color: #205F00;
+}
+.about-readtext P {
+   color: #205F00;
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 600; 
+}
+.about-readtext a {
+    border: none;
+    border-radius: 30px 1px;
+    padding: 15px 40px;
+    background: #205F00;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-decoration: none;
+}
+.about-readtext a:hover {
+    color: #205F00;
+    background: #8B0713;
+    text-decoration: none;
+}
+.about-readtext span {
+    border: none;
+    border-radius: 20px 1px;
+    padding: 17px 20px;
+    background: #205F00;
+    color: #FFFFFF;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.about-imagearea:hover {
+    transform: scale(1.1);
+}
+.about-imagearea{
+   position: relative;
+    cursor: pointer;
+    margin: 20px 0;
+}
+.about-imagearea img{
+    width: 100%;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: .7;
+    transition: .5s ease;
+    background-color: #8EA66F;
+    margin: 0 auto;
+}
+.youtube {
+    text-decoration: none;
+    text-align: center;
+}
+.youtube span {
+    color: red;
+    margin-top: 40%;
+    margin-left: 43%;
+}
+.service-area {
+    padding: 100px 0;
+    overflow: hidden;
+}
+.service-text {
+    text-align: center;
+    
+}
+.service-text h2 {
+  font-size: 35px;
+  position: relative;
+  color: #205F00;
+  font-weight: 600;
+  
+}
+.service-text span {
+  position: absolute;
+  font-size: 60px;
+  top: -15px;
+  transform: translateX(-80%);
+  font-weight: 700;
+  opacity: .2;
+}
+.service-text p {
+    text-transform: capitalize;
+    color: #205F00;
+    font-size: 18px;
+}
+.service-image {
+    padding: 40px 0;
+}
+.service-item {
+    margin: 40px 0;
+}
+.item-text h2 {
+  font-size: 35px;
+  color: #205F00;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.item-text span { 
+    margin-left: 40%;
+}
+.item-text p {
+    text-transform: capitalize;
+    color: #205F00;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.item-text a {
+    border: none;
+    border-radius: 30px 1px;
+    padding: 15px 40px;
+    background: #205F00;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-decoration: none;
+}
+.item-text a:hover {
+    color: #205F00;
+    background: #8B0713;
+    text-decoration: none;
+
+}
+.item-img:hover img {
+    transform: scale(.9);
+
+}
+.discount-area {
+    overflow: hidden;
+    background: url(file:///D:/Hiking/images/discount-bg.jpg) no-repeat 0 0 / 100% 100%;
+    padding: 100px 0;
+    
+}
+.discount-text h5 {
+    color: #205F00;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 0
+}
+.discount-text h2 {
+    color: #205F00;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 35px;
+    margin-top: 0;
+    margin-bottom: 0
+}
+.discount-text h3 {
+    color: #205F00;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 3px;
+    margin-top: 0;
+    margin-bottom: 0 
+}
+.discount-text p {
+    color: #205F00;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.discount-text a {
+    border: none;
+    border-radius: 30px 1px;
+    padding: 15px 40px;
+    background: #205F00;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-decoration: none;
+}
+.discount-text a:hover {
+    color: #205F00;
+    background: #8B0713;
+    text-decoration: none;
+}
+.pricing-area{
+    padding: 100px 0;
+    overflow: hidden;
+}
+.pricing-img {
+    padding: 40px 0;
+}
+.pricing-item {
+    background-color: #F1F1F1;
+    
+    text-align: center;
+}
+.pricing-heading {
+    background: #448C00;
+    text-align: center;
+    padding: 40px 0;
+}
+.pricing-heading  h3 {
+    text-transform: capitalize;
+    color: #FFFFFF;
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 0
+}
+.pricing-heading  h2 {
+    text-transform: capitalize;
+    color: #FFFFFF;
+    font-size: 35px;
+    margin-top: 0;
+    margin-bottom: 0
+}
+.pricing-text {
+    padding: 40px 0;
+}
+.pricing-text span {
+    color: #205F00;
+    font-size: 25px;
+}
+.pricing-text a {
+    border: none;
+    border-radius: 30px 1px;
+    padding: 15px 40px;
+    background: #205F00;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-decoration: none;
+}
+.pricing-text a:hover {
+    color: #205F00;
+    background: #8B0713;
+    text-decoration: none;
+}
+.link {
+    margin-top: 30px;
+}
+.sale-area {
+    overflow: hidden;
+    background: url(file:///D:/Hiking/images/sale-img.jpg) no-repeat 0 0 / 100% 100%;
+    padding: 100px 0;
+}
+
+.sale-text h5 {
+    color: #205F00;
+    text-transform: capitalize;
+    font-weight: 600;
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 0
+}
+.sale-text h2 {
+    color: #205F00;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 35px;
+    margin-top: 0;
+    margin-bottom: 0
+}
+.sale-text h3 {
+    color: #205F00;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 3px;
+    margin-top: 0;
+    margin-bottom: 0; 
+}
+.sale-text p {
+    color: #205F00;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.sale-text a {
+    border: none;
+    border-radius: 30px 1px;
+    padding: 15px 40px;
+    background: #205F00;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 18px;
+    text-decoration: none;
+    
+}
+.sale-text a:hover {
+    color: #205F00;
+    background: #8B0713;
+    text-decoration: none;
+}
+.blog-area {
+    padding: 100px 0;
+    overflow: hidden;
+}
+.blog-text {
+    text-align: center;
+}
+.blog-text h2 {
+  font-size: 35px;
+  position: relative;
+  color: #205F00;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.blog-text span {
+  position: absolute;
+  font-size: 60px;
+  top: -15px;
+  transform: translateX(-80%);
+  font-weight: 700;
+  opacity: .2;
+  text-transform: uppercase;
+}
+.blog-text p {
+    text-transform: capitalize;
+    color: #205F00;
+    font-size: 18px;
+}
+.blog-image {
+    padding: 60px 0;
+}
+.blog-item {
+    background: #F1F1F1;
+}
+.item-text {
+    margin-left: 15px;
+    padding: 45px 0;
+}
+.item-text h4 {
+    color: #205F00;
+    font-weight: 700;
+    font-size: 25px;
+}
+.footer-area {
+    overflow: hidden;
+    background: url(file:///D:/Hiking/images/foooter.jpg) no-repeat 0 0 / 100% 100%;
+    padding: 60px 0;
+    text-align: center;
+}
+.footer-area  ul {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+.footer-area  ul li h2{
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 40px;
+    margin-top: 15px;
+    margin-bottom: 0; 
+}
+.footer-area  ul li h5{
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 25px;
+    margin-top: 0;
+    margin-bottom: 0; 
+}
+.footer-area  ul li h3{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 35px;
+    margin-top: 0;
+    margin-bottom: 0; 
+}
+.footer-area  ul li span {
+    color: #205F00; 
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding: 5px 5px;
+    margin: 10px 5px;
+}
+.footer-area  ul li span:hover {
+    transform: scale(1.1);
+}
